@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>14枚スライド＋本のアニメーション</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="container" id="slider">
+    <!-- スライド①：本（ホバーで開く） -->
+    <div class="screen s1">
+      <div class="book closed" id="bookStart">
+        <div class="book-inbox">
+          <!-- <ul>
+            <li><a href="#">テキストリンク</a> ← リンクも使えます。</li>
+            <li>この本はCSSで作成されています。</li>
+            <li>ホバーすると開き、開いた状態を保持します。</li>
+          </ul> -->
+          <p>― これは、夢を見た小さな虫たちの物語 ―<br>
+            むかしむかし、2008年のこと……</p>
+          <img src="./img/p4/後ろ.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="study">
+      <img src="img/study.png" alt="">
+    </div>
+    <div class="screen s2">②
+      <div class="flont-bottom">
+        <img src="img/flont.png" alt="フロント画像">
+      </div>
+      <div class="center-text">ここにテキストが表示されます</div>
+
+      <!-- 5秒後に出現する要素 -->
+      <div class="after-content">
+        <img src="img/insect5.png" alt="後に出す画像" class="after-image" />
+        <div class="after-text">
+          <p>右側に表示される新しいテキストです。</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="screen s3">
+    </div>
+    <div class="screen s4">
+      <img src="./img/p5/walk.png" alt="">
+    </div>
+    <div class="screen s5">
+      <div class="top-image" id="topimage"></div>
+      <div class="text-content-50f" id="text-content-50f">
+        <p>ここに表示したいテキスト</p>
+      </div>
+      <button id="open50fModal" class="open-50f-modal">芋虫たち50階にいる
+        <span class="buttonIcon">
+          <svg class="iconArrowLeft" width="17" height="17" viewBox="0 -4 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 6L15.2929 11.2929C15.6834 11.6834 15.6834 12.3166 15.2929 12.7071L10 18" stroke="#ffffff"
+              stroke-linecap="round" />
+          </svg>
+        </span></button>
+
+      <!-- モーダルウィンドウの内容 -->
+      <div id="Modal-50F" class="modal50f modal-animate">
+        <div id="close50fModal">
+          <p>閉じる</p>
+        </div>
+      </div>
+    </div>
+    <div class="screen s6">
+      <div class="text-content-cr" id="text-content-cr">
+        <p>ここに表示したいテキスト</p>
+      </div>
+      <button id="openCrModal" class="open-cr-modal">芋虫たち勉強中<span class="buttonIcon">
+          <svg class="iconArrowLeft" width="17" height="17" viewBox="0 -4 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 6L15.2929 11.2929C15.6834 11.6834 15.6834 12.3166 15.2929 12.7071L10 18" stroke="#ffffff"
+              stroke-linecap="round" />
+          </svg>
+        </span></button>
+
+      <!-- モーダルウィンドウの内容 -->
+      <div id="ModalCr" class="modalcr modal-animate">
+        <div id="closeModalCr">
+          <p>閉じる</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="screen s7">
+      <div class="text-content-cs" id="text-content-cs">
+        <p>ここに表示したいテキスト</p>
+      </div>
+      <button id="openCsModal" class="open-cs-modal">芋虫たち食事中<span class="buttonIcon">
+          <svg class="iconArrowLeft" width="17" height="17" viewBox="0 -4 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 6L15.2929 11.2929C15.6834 11.6834 15.6834 12.3166 15.2929 12.7071L10 18" stroke="#ffffff"
+              stroke-linecap="round" />
+          </svg>
+        </span></button>
+
+
+      <!-- モーダルウィンドウの内容 -->
+      <div id="ModalCs" class="modalcs modal-animate">
+        <div id="closeModalCs">
+          <p>閉じる</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="screen s8">
+      <div class="carousel-top-section">
+        <div class="carousel-text-content">
+          <p>そして虫たちは、さまざまな分野の勉強に取り組み、努力を重ねて検定に挑戦することで、少しずつ知識と自信を身につけ、着実に成長していきます。
+          </p>
+        </div>
+        <img src="img/insect4.png" alt="説明" class="carousel-top-image">
+      </div>
+      <div class="carousel-wrapper">
+        <div class="carousel">
+          <div class="carousel-track" id="carousel-track-1">
+            <div class="carousel-item">
+              <img src="img/207.jpg" alt="画像1">
+              <p>7月CG検定</p>
+            </div>
+            <div class="carousel-item">
+              <img src="img/310.jpg" alt="画像2">
+              <p>10月留学生交流会</p>
+            </div>
+            <div class="carousel-item">
+              <img src="img/501.jpg" alt="画像3">
+              <p>1月未来創造展</p>
+            </div>
+            <div class="carousel-item">
+              <img src="img/602.jpg" alt="画像1">
+              <p>2月就職内定</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="screen s9">
+      <div class="carousel-top-section">
+        <div class="carousel-text-content">
+          <p>そして虫たちは、さまざまな分野の勉強に取り組み、努力を重ねて検定に挑戦することで、少しずつ知識と自信を身につけ、着実に成長していきます。
+          </p>
+        </div>
+        <img src="img/insect4.png" alt="説明" class="carousel-top-image">
+      </div>
+      <div class="carousel-wrapper">
+        <div class="carousel">
+          <div class="carousel-track" id="carousel-track-2">
+            <div class="carousel-item">
+              <img src="img/104.jpg" alt="画像1">
+              <p>4月入学式</p>
+            </div>
+            <div class="carousel-item">
+              <img src="img/412.jpg" alt="画像3">
+              <p>12月アメリカ卒業旅行</p>
+            </div>
+            <div class="carousel-item">
+              <img src="img/703.jpg" alt="画像1">
+              <p>3月HAL EVENT WEEK</p>
+            </div>
+            <div class="carousel-item">
+              <img src="img/803.jpg" alt="画像2">
+              <p>3月卒業式</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="screen s10"><img src="./img/br/前.png" alt=""></div>
+    <div class="screen s11">
+      <img src="./img/bf/bf06.png" alt="">
+      <p>まだできてない。。。</p>
+    </div>
+    <div class="screen s12"></div>
+    <div class="screen s13"></div>
+
+    <!-- スライド⑭：ホバーで閉じる本 -->
+    <div class="screen s14">
+      <div class="book open" id="bookFinal">
+        <div class="book-inbox">
+          <ul>
+            <li><a href="#">ありがとう</a></li>
+            <li>この本は閉じられました 📕</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav" id="nav">
+    <button id="prevBtn">◀
+      前のページへ</button>
+    <button id="nextBtn">次のページへ
+      ▶</button>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="modal.js"></script>
+
+  <script>
+    const section = document.querySelector('.s5');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          section.classList.add('active');
+        }
+      });
+    });
+
+    observer.observe(section);
+  </script>
+</body>
+
+</html>
