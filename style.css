@@ -147,7 +147,7 @@ body {
 }
 
 .s5 {
-  background-image: url(img/p6/後.jpg);
+  background-image: url(img/cctbg01.jpg);
   left: 300vw;
   top: 100vh;
   background-repeat: no-repeat;
@@ -160,7 +160,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(./img/p6/前.png);
+  background-image: url(./img/p6fr.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -187,7 +187,7 @@ body {
 .s6 {
   left: 300vw;
   top: 200vh;
-  background-image: url(img/p7/外.jpg);
+  background-image: url(img/cctbg02.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -196,7 +196,7 @@ body {
 .s7 {
   left: 300vw;
   top: 300vh;
-  background-image: url(img/p8/外.jpg);
+  background-image: url(img/cctbg03.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 
